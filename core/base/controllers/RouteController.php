@@ -2,6 +2,7 @@
 
 namespace core\base\controllers;
 use core\base\settings\Settings;
+use core\base\settings\ShopSettings;
 
 class RouteController
 {
@@ -20,7 +21,7 @@ class RouteController
 
     private function __construct(){
         echo '<pre>';
-        print_r(Settings::get('routes'));
+        print_r(ShopSettings::get('templateArr'));
         echo '</pre>';
     }
 
